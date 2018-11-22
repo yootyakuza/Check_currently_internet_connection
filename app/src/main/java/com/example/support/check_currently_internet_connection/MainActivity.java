@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     drawable.startTransition(1000);
                     Toast.makeText(getApplicationContext(),"Online",Toast.LENGTH_SHORT).show();
                 }else {
-                    //drawable.reverseTransition(1000);
+                    drawable.resetTransition();
                     Toast.makeText(getApplicationContext(),"Offline",Toast.LENGTH_SHORT).show();
                 }
             }
